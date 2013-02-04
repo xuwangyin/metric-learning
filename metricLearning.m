@@ -36,7 +36,8 @@ for i = 1: MAX_ITERATIONS
   [XTest, yTest, ~] = resample(sTest, theta, nfeatures);
   %% generalization on test set of current theta
   fprintf('generalization : %f\n', sum(sigmoid(XTest * theta) > 0.5 == yTest) / numel(yTest));
-  fprintf('accuracy: %f\n', getAccuracy(sTest, theta));
+  fprintf('training set accuracy: %f\n', getAccuracy(sTrain, theta));
+  fprintf('test set accuracy: %f\n', getAccuracy(sTest, theta));
 
   
   fprintf("******** stage2 ********\n");
@@ -44,8 +45,9 @@ for i = 1: MAX_ITERATIONS
   fprintf('cost: %f\n', cost); %% value of cost function after stage1
   fprintf('precision: %f\n', sum(sigmoid(XTrain * theta) > 0.5 == yTrain) / numel(yTrain));
   fprintf('generalization : %f\n', sum(sigmoid(XTest * theta) > 0.5 == yTest) / numel(yTest));
-  fprintf('accuracy: %f\n', getAccuracy(sTest, theta));
+  fprintf('training set accuracy: %f\n', getAccuracy(sTrain, theta));
+  fprintf('test set accuracy: %f\n', getAccuracy(sTest, theta));
   fprintf('================================\n\n');
-  %% comment out this if you are using MATLAB
-  fflush(stdout);
+  %% uncomment out this if you are using octave
+  %% fflush(stdout);
 end
