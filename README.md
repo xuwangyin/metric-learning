@@ -3,7 +3,7 @@ Metric Learning Algorithm for Single-linkage Clustering
 
 Introduction
 ----------------
-[single-linkage](http://en.wikipedia.org/wiki/Single-linkage_clustering)
+[Single-linkage](http://en.wikipedia.org/wiki/Single-linkage_clustering)
 clustering belongs to the family of
 [Hierarchical clustering](http://en.wikipedia.org/wiki/Hierarchical_clustering).
 In single-linkage clustering, assume that a distance
