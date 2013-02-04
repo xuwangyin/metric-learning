@@ -38,6 +38,9 @@ The accuracy of learned parameters is defined as the portion
 of data pairs (include must-link and cannot-link data pairs)
 that are correctly clustered using the learned parameters.
 
+Run metricLearning.m in matlab or octave to see the experimental 
+results (the default dataset is [wine](http://archive.ics.uci.edu/ml/datasets/wine)).
+
 
 
 
