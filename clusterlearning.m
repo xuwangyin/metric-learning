@@ -46,5 +46,6 @@ for i = 1: MAX_ITERATIONS
   fprintf('generalization : %f\n', sum(sigmoid(XTest * theta) > 0.5 == yTest) / numel(yTest));
   fprintf('accuracy: %f\n', getAccuracy(sTest, theta));
   fprintf('================================\n\n');
+  %% comment out this if you are using MATLAB
   fflush(stdout);
 end
