@@ -29,6 +29,7 @@ function [X, y, graphStat] = sampleCannotlink(classConstrain, theta)
       sv = similarityVector(classConstrain.cannotlink(i, :), classConstrain.mustlink(j, :));
       if sv' * theta < minSimilarity
         X = sv;
+        minSimilarity = sv' * theta;
       end
     end
   end
